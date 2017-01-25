@@ -83,9 +83,9 @@
 
 </script>
 <style lang="less" rel="stylesheet/less">
-    #movie {
-        .content {
-            >
+    /*#movie {*/
+        /*.content {*/
+            /*>*/
             .section-content {
                 padding-top: 0.83rem;
                 >
@@ -117,7 +117,7 @@
 
                 }
             }
-        }
+//        }
         .section-movie {
             >
             ul {
@@ -187,5 +187,5 @@
             }
 
         }
-    }
+    /*}*/
 </style>
