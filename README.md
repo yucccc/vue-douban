@@ -1,6 +1,9 @@
-# douban
+# vue2.0 -- 豆瓣电影
 
-> 目前实现了movie首页，路由切换，搜索功能， 数据均来自豆瓣API
+### 项目使用了 
+	-- 饿了么 MintUi 组件库 （可不用，效果比较难看）
+	-- animate.css	动画库	（可不用）
+	-- better.scroll 滑动插件
 ## Build Setup
 
 ``` bash
