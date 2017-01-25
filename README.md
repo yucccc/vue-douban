@@ -1,7 +1,6 @@
 # douban
 
-> A Vue.js project
-
+> 目前实现了movie首页，路由切换，搜索功能， 数据均来自豆瓣API
 ## Build Setup
 
 ``` bash
