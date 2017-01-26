@@ -14,7 +14,7 @@
         <div id="hot" class="section-movie" ref='moveItem'>
             <ul>
                 <li v-for="(item,i) in data" :key='i'>
-                    <router-link to="/movie/msg">
+                    <router-link :to="'/movie/subject/'+item.id">
                         <!--图片**语法错误 background-image:url(item.images.medium)-->
                         <div class="img">
                             <img :src="item.images.medium" alt="">
@@ -23,7 +23,7 @@
                         <div class="title">{{item.title}}</div>
                         <div class='item-rating'>
                             <!--星星-->
-                            <star :score="item.rating.average" v-if="item.rating.average==0?false:true"></star>
+                            <Vstar :score="item.rating.average" v-show="item.rating.average==0?false:true"></Vstar>
                             <span class="grade">{{item.rating.average =='00'?'暂无评分':item.rating.average}}</span>
 
                         </div>
@@ -38,7 +38,7 @@
 </template>
 <script>
     // 星星
-    import star from '../star.vue'
+    import Vstar from '../star.vue'
     // 引入beeter scroll
     import BScroll from 'better-scroll'
     export default{
@@ -77,115 +77,117 @@
             })
         },
         components: {
-            star
+            Vstar
         }
     }
 
 </script>
 <style lang="less" rel="stylesheet/less">
     /*#movie {*/
-        /*.content {*/
-            /*>*/
-            .section-content {
-                padding-top: 0.83rem;
-                >
-                header {
-                    position: relative;
-                    padding: 0 1.12rem;
+    /*.content {*/
+    /*>*/
+    .section-content {
+        padding-top: 0.83rem;
+        >
+        header {
+            position: relative;
+            padding: 0 1.12rem;
 
-                    >
-                    h2 {
-                        font-weight: normal;
-                        display: inline-block;
-                        min-width: 4em;
-                        margin-bottom: 0;
-                        color: #111;
-                        padding-left: 0;
-                        padding-bottom: 0;
-                        font-size: 1.1rem;
-                    }
-
-                    >
-                    span {
-                        font-size: 0.9rem;
-                        text-align: right;
-                        line-height: 1.1rem;
-                        position: absolute;
-                        bottom: 0px;
-                        right: 1.12rem;
-                    }
-
-                }
-            }
-//        }
-        .section-movie {
             >
-            ul {
-                padding-top: 15px;
-                /*不进行换行/*white-space: nowrap; 出现bug better使用不了 换为固定值*/
-                width: 675px;
-                overflow: hidden;
-                li:first-child {
-                    margin-left: 1.12rem
-                }
-                li:last-child {
-                    margin-right: 1.12rem
-
-                }
-
-            }
-            li + li {
-                margin-left: 0.48rem;
+            h2 {
+                font-weight: normal;
+                display: inline-block;
+                min-width: 4em;
+                margin-bottom: 0;
+                color: #111;
+                padding-left: 0;
+                padding-bottom: 0;
+                font-size: 1.1rem;
             }
 
-            li {
-                > * {
-                    font-size: .94rem;
-                }
-                float: left;
-                vertical-align: top;
-                width: 100px;
-                text-align: center;
-                .img {
-                    width: 100%;
-                    overflow: hidden;
-                    height: 8.93rem;
-                    > img {
-                        height: 100%;
-                        width: 100%;
-                    }
-                }
-                .item-rating {
-                    color: #aaa;
-                    line-height: .94rem;
-                    margin-top: .3rem;
-                    font-size: .72rem;
-                }
-                .title {
-                    margin-top: 0.6rem;
-                    font-size: 1rem;
-                    line-height: 0.94rem;
-                    max-width: 100%;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    word-wrap: normal;
-                }
+            >
+            span {
+                font-size: 0.9rem;
+                text-align: right;
+                line-height: 1.1rem;
+                position: absolute;
+                bottom: 0px;
+                right: 1.12rem;
+            }
 
-                >
-                a {
-                    display: block
-                }
+        }
+    }
 
-                .grade {
-                    color: #aaa;
-                    line-height: .94rem;
-                    margin-top: .3rem;
-                    font-size: .72rem;
-                }
+    //        }
+    .section-movie {
+        >
+        ul {
+            padding-top: 15px;
+            /*不进行换行/*white-space: nowrap; 出现bug better使用不了 换为固定值*/
+            width: 675px;
+            overflow: hidden;
+            li:first-child {
+                margin-left: 1.12rem
+            }
+            li:last-child {
+                margin-right: 1.12rem
 
             }
 
         }
+        li + li {
+            margin-left: 0.48rem;
+        }
+
+        li {
+            > * {
+                font-size: .94rem;
+            }
+            float: left;
+            vertical-align: top;
+            width: 100px;
+            text-align: center;
+            .img {
+                width: 100%;
+                overflow: hidden;
+                height: 8.93rem;
+                > img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .item-rating {
+                color: #aaa;
+                line-height: .94rem;
+                margin-top: .3rem;
+                font-size: .72rem;
+            }
+            .title {
+                margin-top: 0.6rem;
+                font-size: 1rem;
+                line-height: 0.94rem;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: normal;
+            }
+
+            >
+            a {
+                display: block
+            }
+
+            .grade {
+                color: #aaa;
+                line-height: .94rem;
+                margin-top: .3rem;
+                font-size: .72rem;
+            }
+
+        }
+
+    }
+
     /*}*/
 </style>

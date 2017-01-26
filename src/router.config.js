@@ -18,12 +18,12 @@ export default {
     mode: 'history',
     base: __dirname,
     routes: [
-        { path: '/movie', component: Movie },
-        { path: '/movie/:id', component: movieId },
+        { path: '/movie/', component: Movie },
+        { path: '/movie/subject/:id', component: movieId },
         { path: '/books', component: Books },
         { path: '/status', component: Status },
         { path: '/group', component: Group },
         { path: '/search', component: Search },
-        { path: '*', redirect: '/movie' }
+        { path: '*', redirect: '/movie/' }
     ]
 }

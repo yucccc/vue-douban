@@ -3,7 +3,7 @@
     <!--底部-->
     <div class="douban-app">
         <div class="info">
-            <img src="../assets/images/douban-app-logo.png" alt="#">
+            <img src="https://img3.doubanio.com/f/talion/7837f29dd7deab9416274ae374a59bc17b5f33c6/pics/card/douban-app-logo.png" alt="#">
             <div class="info-content"><strong>豆瓣</strong>
                 <div>我们的精神角落</div>
             </div>

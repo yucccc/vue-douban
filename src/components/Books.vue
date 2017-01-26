@@ -4,7 +4,7 @@
         <!--<Vitems :Title='Title[0]' :url='url+"24877306"'></Vitems>-->
         <!--<Vitems :Title='Title[1]' :url='url+"1003078"'></Vitems>-->
         <!--轮播图-->
-        <Vswipe :Title='Title[2]'></Vswipe>
+        <Vswipe></Vswipe>
         <!--分类浏览-->
         <types :title="title" :msg="msg"></types>
         <Vbottom></Vbottom>
