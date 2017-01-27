@@ -1,6 +1,18 @@
 var path = require('path')
 var webpack = require('webpack')
-
+// -------------------
+// var express = require('express')
+// var app = express()
+// var appData = require('./src/components/status/status.json');
+// var apiRoutes = express.Router();
+// apiRoutes.get('/appData', function (req, res) {
+//     res.json({
+//         errno: 0,
+//         data: appData
+//     });
+// });
+// app.use('/api', apiRoutes);
+// ---------------
 module.exports = {
     entry: './src/main.js',
     output: {

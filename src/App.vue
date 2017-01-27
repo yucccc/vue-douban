@@ -4,9 +4,11 @@
         <!--头部-->
         <Vheader></Vheader>
         <!--渲染区-->
-        <transition enter-active-class="animated flipInY"
-                    >
-            <router-view></router-view>
+        <transition enter-active-class="animated flipInY">
+            <!--保持状态不重复发送请求-->
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
         </transition>
 
     </div>

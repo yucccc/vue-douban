@@ -30,7 +30,8 @@
                         <a class="cl" href='#'>用App查看影人资料</a>
                     </p>
                 </div>
-                
+
+
                 <!--简介-->
             </section>
             <section class="subject-summary">
@@ -120,7 +121,6 @@
                     }
                     .size {
                         width: auto;
-
                         > span {
                             width: 13px;
                             height: 13px;
@@ -159,11 +159,8 @@
             }
             p {
                 font-size: 15px;
-                color: #494949;
                 line-height: 22px;
                 word-wrap: break-word;
-                margin: 0;
-                padding: 0;
             }
 
         }
