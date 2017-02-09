@@ -47,11 +47,11 @@
         display: inline-block;
 
         .on {
-            background-image: url('../assets/images/on.png');
+            background-image: url('../../assets/img/on.png');
         }
 
         .off {
-            background-image: url('../assets/images/off.png');
+            background-image: url('../../assets/img/off.png');
         }
 
         .star-i {

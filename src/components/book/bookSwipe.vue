@@ -14,7 +14,7 @@
             <mt-swipe :auto="4000" :show-indicators="false">
                 <mt-swipe-item :class="{slide1:true}">
                     <a class="swipe-a" href="#">
-                        <img class="cover" src="https://img3.doubanio.com/view/freyr_page_photo/raw/public/1384.jpg"
+                        <img class="cover" src="../../assets/img/1384.jpg"
                              alt="">
                         <div class="content">
                             <div>
@@ -26,7 +26,7 @@
                     </a>
                 </mt-swipe-item>
                 <mt-swipe-item :class="{slide2:true}"><a class="swipe-a" href="#">
-                    <img class="cover" src="https://img3.doubanio.com/view/freyr_page_photo/raw/public/1324.jpg"
+                    <img class="cover" src="../../assets/img/1324.jpg"
                          alt="">
                     <div class="content">
                         <div>
@@ -37,7 +37,7 @@
                     </div>
                 </a></mt-swipe-item>
                 <mt-swipe-item :class="{slide3:true}"><a class="swipe-a" href="#">
-                    <img class="cover" src="https://img1.doubanio.com/view/freyr_page_photo/raw/public/898.jpg"
+                    <img class="cover" src="../../assets/img/898.jpg"
                          alt="">
                     <div class="content">
                         <div>

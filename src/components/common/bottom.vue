@@ -11,14 +11,8 @@
         <a href="#" class="cl">去 App Store 免费下载 iOS 客户端</a>
     </div>
 </template>
-<style rel="stylesheet/less" lang="less">
-    #app {
-        padding-top: 47px;
-        max-width: 650px;
-        background: #fff;
-        margin: 0 auto;
-        overflow-x: hidden;
-        overflow-y: hidden;
+<style rel="stylesheet/less" lang="less" scoped>
+
         /*底部*/
         .douban-app {
             padding: 0 0 20px 0;
@@ -57,7 +51,7 @@
                 display: block;
             }
         }
-    }
+
 
 </style>
 

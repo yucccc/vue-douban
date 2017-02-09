@@ -1,6 +1,7 @@
 <template>
     <!--//最大的盒子-->
-    <div id="movie">
+
+    <div id="movie" ref='upDown'>
         <!--电影总内容-->
         <div class="content">
             <!--列表模板渲染组件-->
@@ -9,6 +10,7 @@
             <Vitems :Title='Title[2]' :url='url+"coming_soon"'></Vitems>
             <!--分类浏览组件-->
             <Vtypes :title="title" :msg="msg"></Vtypes>
+
         </div>
         <!--底部组件-->
         <Vbottom></Vbottom>
@@ -16,11 +18,13 @@
 </template>
 <script>
     // 引入分类浏览组件
-    import Vtypes from './types.vue'
+    import Vtypes from '../common/types.vue'
     // 导入底部
-    import Vbottom from './bottom.vue'
+    import Vbottom from '../common/bottom.vue'
     // 导入列表组件
-    import Vitems from './movie/itemsTemplate.vue'
+    import Vitems from './itemsTemplate.vue'
+    // 引入beeter scroll
+//    import BScroll from 'better-scroll'
     export default {
         name: 'movie',
         data() {
@@ -31,8 +35,19 @@
                 msg: ['经典', '冷门佳片', '豆瓣高分', '动作', '喜剧', '爱情', '悬疑', '恐怖', '科幻', '治愈', '文艺', '成长', '动画', '华语', '欧美', '韩国', '日本']
             }
         },
-        methods: {},
+        methods: {
+            // 使用better-scroll实现左右滑动
+//            _initScroll() {
+//                this.moveScroll = new BScroll(this.$refs.upDown, {
+//                    scrollY: true,
+//                    click: true
+//                })
+//            }
+        },
         created() {
+        },
+        updated(){
+//            this._initScroll()
         },
         components: { // 子组件
             Vtypes,

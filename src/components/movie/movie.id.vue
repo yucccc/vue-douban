@@ -7,9 +7,7 @@
             <h1>{{data.title}}</h1>
             <section class="subject-info clearfix">
                 <!--海报-->
-                <div class="img fr">
-                    <a href="#"><img :src="datai" alt="data.title"></a>
-                </div>
+
                 <div class="conentL">
                     <p class="comment">
                         <!--星星-->
@@ -30,7 +28,9 @@
                         <a class="cl" href='#'>用App查看影人资料</a>
                     </p>
                 </div>
-
+                <div class="img fr">
+                    <a href="#"><img :src="datai" alt="data.title"></a>
+                </div>
 
                 <!--简介-->
             </section>
@@ -48,11 +48,11 @@
 </template>
 <script>
     //    导入顶部广告组件
-    import VtopBanner from '../top_banner.vue'
+    import VtopBanner from '../common/top_banner.vue'
     //    导入星星组件
-    import Vstar from '../star.vue'
+    import Vstar from '../common/star.vue'
     //    导入底部
-    import Vbottom from '../bottom.vue'
+    import Vbottom from '../common/bottom.vue'
     export default{
         data(){
             return {
@@ -106,9 +106,10 @@
         .subject-info {
             position: relative;
             margin-bottom: 30px;
+            display: flex;
             .conentL {
-                float: left;
-                width: 70%;
+
+                flex: 1;
                 .comment {
                     line-height: 18px;
                     span:last-child {

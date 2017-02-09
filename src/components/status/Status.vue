@@ -67,9 +67,9 @@
 </template>
 <script>
     //    导入顶部广告
-    import VtopBanner from '../top_banner.vue'
+    import VtopBanner from '../common/top_banner.vue'
     //    导入底部客户端下载
-    import Vbottom from  '../bottom.vue'
+    import Vbottom from  '../common/bottom.vue'
 
 
     export  default{
@@ -84,7 +84,7 @@
         },
         methods: {
             getStatus(){
-                this.$http.get('src/components/status/status.json').then((res)=> {
+                this.$http.get('status.json').then((res)=> {
                     this.data = res.data.items
                 }, (err)=> {
                     console.log(err)
@@ -158,10 +158,10 @@
                 margin: 0;
             }
             .icon-camera:before {
-                background: url("../../assets/images/ic_status_camera.svg");
+                background: url("../../assets/img/ic_status_camera.svg");
             }
             .icon-pen:before {
-                background: url("../../assets/images/ic_status_pen.svg");
+                background: url("../../assets/img/ic_status_pen.svg");
             }
 
         }
@@ -291,16 +291,16 @@
                         top: -3px;
                     }
                     .ic-btn-like:before {
-                        background-image: url("../../assets/images/ic_like_gray.svg");
+                        background-image: url("../../assets/img/ic_like_gray.svg");
                     }
                     .ic-btn-comment:before {
-                        background-image: url("../../assets/images/ic_comment.svg");
+                        background-image: url("../../assets/img/ic_comment.svg");
                     }
                     .ic-btn-retweet:before {
-                        background-image: url("../../assets/images/ic_retweet_gray.svg");
+                        background-image: url("../../assets/img/ic_retweet_gray.svg");
                     }
                     .ic-btn-more:before {
-                        background-image: url("../../assets/images/more.svg");
+                        background-image: url("../../assets/img/more.svg");
                     }
                 }
             }

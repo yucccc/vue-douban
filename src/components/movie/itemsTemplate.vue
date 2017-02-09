@@ -3,7 +3,7 @@
 <template id="itemsTemplate">
 
     <!--热门电影-->
-    <section class="section-content clearfix">
+    <section class="section-content">
         <!--头部-->
         <header>
             <!--接收一个标题-->
@@ -11,11 +11,11 @@
             <span class="fr cl">更多</span>
         </header>
 
-        <div id="hot" class="section-movie" ref='moveItem'>
+        <div id="hot" class="section-movie clearfix" ref='moveItem' >
             <ul>
                 <li v-for="(item,i) in data" :key='i'>
                     <router-link :to="'/movie/subject/'+item.id">
-                        <!--图片**语法错误 background-image:url(item.images.medium)-->
+                        <!--图片**语法错误 background-image:url(item.img.medium)-->
                         <div class="img">
                             <img :src="item.images.medium" alt="">
                         </div>
@@ -38,7 +38,7 @@
 </template>
 <script>
     // 星星
-    import Vstar from '../star.vue'
+    import Vstar from '../common/star.vue'
     // 引入beeter scroll
     import BScroll from 'better-scroll'
     export default{
@@ -165,7 +165,7 @@
             .title {
                 margin-top: 0.6rem;
                 font-size: 1rem;
-                line-height: 0.94rem;
+                line-height: 1.1rem;
                 max-width: 100%;
                 overflow: hidden;
                 text-overflow: ellipsis;

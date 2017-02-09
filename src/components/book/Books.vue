@@ -1,8 +1,6 @@
 <!--图书组件-->
 <template>
     <div id="books">
-        <!--<Vitems :Title='Title[0]' :url='url+"24877306"'></Vitems>-->
-        <!--<Vitems :Title='Title[1]' :url='url+"1003078"'></Vitems>-->
         <!--轮播图-->
         <Vswipe></Vswipe>
         <!--分类浏览-->
@@ -14,13 +12,13 @@
     //导入星星组件
     //    import star from './star.vue'
     //导入分类浏览组件
-    import types from './types.vue'
+    import types from '../common/types.vue'
     //导入底部组件
-    import Vbottom from './bottom.vue'
+    import Vbottom from '../common/bottom.vue'
     //    导入列表模板
     //    import Vitems from './movie/itemsTemplate.vue'
     //导入轮播图
-    import Vswipe from './book/bookSwipe.vue'
+    import Vswipe from './bookSwipe.vue'
 
     export default{
         name: 'books',

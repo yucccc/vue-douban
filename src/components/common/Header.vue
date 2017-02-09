@@ -133,7 +133,7 @@
     }
 
 </script>
-<style rel="stylesheet/less" lang="less">
+<style rel="stylesheet/less" lang="less" scoped>
     /*头部*/
     #app {
 
@@ -166,7 +166,7 @@
                 > h1 {
                     text-indent: -9999px;
                     font-size: 0px;
-                    background: url('../assets/images/logo.png') no-repeat;
+                    background: url('../../assets/img/logo.png') no-repeat;
                     background-size: cover;
                     height: 22px;
                     width: 46px;
@@ -187,7 +187,7 @@
                 }
                 .search {
                     font-size: 0;
-                    background: url('../assets/images/search.png') no-repeat;
+                    background: url('../../assets/img/search.png') no-repeat;
                     background-size: cover;
                     width: 24.57143px;
                     height: 18.28571px;
@@ -284,7 +284,7 @@
             box-sizing: border-box;
             -webkit-appearance: none;
             border: 0;
-            background: url('../assets/images/search2.png') no-repeat 50% #f3f3f3;
+            background: url('../../assets/img/search2.png') no-repeat 50% #f3f3f3;
             background-size: 17.33333px;
             border-radius: 3px;
             width: 100%;
