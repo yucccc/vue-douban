@@ -5,7 +5,7 @@
 	-- animate.css	动画库	（可不用）
 	-- better.scroll 滑动插件
 ### 演示	
-	<iframe src="./douban.gif">
+	<iframe src="https://github.com/chenyutong134/vue2.0-doubanWeb/blob/master/douban.gif">
 
 ``` bash
 # install dependencies
