@@ -4,7 +4,8 @@
 	-- 饿了么 MintUi 组件库 （可不用，效果比较难看）
 	-- animate.css	动画库	（可不用）
 	-- better.scroll 滑动插件
-## Build Setup
+### 演示	
+	![image](https://github.com/chenyutong134/vue2.0-doubanWeb/blob/master/douban.gif ) 
 
 ``` bash
 # install dependencies
