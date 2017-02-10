@@ -5,7 +5,7 @@
 	-- animate.css	动画库	（可不用）
 	-- better.scroll 滑动插件
 ### 演示	
-	![image](douban.gif)
+	![image](/douban.gif)
 
 ``` bash
 # install dependencies
