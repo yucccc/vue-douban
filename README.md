@@ -5,7 +5,7 @@
 	-- animate.css	动画库	（可不用）
 	-- better.scroll 滑动插件
 ### 演示	
-	[演示地址https://github.com/chenyutong134/vue2.0-doubanWeb/blob/master/douban.gif](https://github.com/chenyutong134/vue2.0-doubanWeb/blob/master/douban.gif)
+	演示地址(https://github.com/chenyutong134/vue2.0-doubanWeb/blob/master/douban.gif)
 
 ``` bash
 # install dependencies
