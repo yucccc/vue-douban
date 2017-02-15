@@ -55,6 +55,7 @@
             _initScroll() {
                 this.moveScroll = new BScroll(this.$refs.moveItem, {
                     scrollX: true,
+                    eventPassthrough: 'vertical',
                     click: true
                 })
             }
